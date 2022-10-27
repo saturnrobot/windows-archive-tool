@@ -1,0 +1,1 @@
+dir %1 /a-d /-c /s /b|findstr /v /i "%2">%3
