@@ -176,7 +176,7 @@ For the sake of speed this script assumes that destination and source files have
 #>
 function errorDiff {
 	# Refrence (ref) would be the original file and Difference (dif) would be the new file
-	write-host "Merge errors. Checking for files smaller on destination but newer on source"
+	write-host "Merge errors. Checking for files on source that are bigger but older than files on destination"
 	write-out "Checking for merge errors between orignial $dstDir to new $srcDir"
 	$pattern = "[\\\/]Changed[\\\/]"
 	# Using get child item, this is the slowest but it is using proper powershell cmdlets
